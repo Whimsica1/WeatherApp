@@ -438,7 +438,7 @@ function getDateTime() {
 
   let days = [
     "Sunday",
-    "Monday",
+    "Here We Go Again",
     "Tuesday",
     "Wednesday",
     "Thursday",
@@ -500,7 +500,7 @@ function getWeatherData(city, unit, hourlyorWeek) {
       }
       currentLocation.innerText = data.resolvedAddress;
       condition.innerText = today.conditions;
-      rain.innerText = "Perc - " + today.precip + "%";
+      rain.innerText = "Prec - " + today.precip + "%";
       uvIndex.innerText = today.uvindex;
       windSpeed.innerText = today.windspeed;
       measureUvIndex(today.uvindex);
@@ -655,7 +655,7 @@ function measureUvIndex(uvIndex) {
   } else if (uvIndex <= 10) {
     uvText.innerText = "Very High";
   } else {
-    uvText.innerText = "Extreme";
+    uvText.innerText = "Vamps Stay at home";
   }
 }
 
@@ -666,7 +666,7 @@ function updateHumidityStatus(humidity) {
   } else if (humidity <= 60) {
     humidityStatus.innerText = "Moderate";
   } else {
-    humidityStatus.innerText = "High";
+    humidityStatus.innerText = "Moist 😏";
   }
 }
 
@@ -694,7 +694,7 @@ function updateVisibiltyStatus(visibility) {
 // function to get air quality status
 function updateAirQualityStatus(airquality) {
   if (airquality <= 50) {
-    airQualityStatus.innerText = "Good👌";
+    airQualityStatus.innerText = "Good ❤️";
   } else if (airquality <= 100) {
     airQualityStatus.innerText = "Moderate😐";
   } else if (airquality <= 150) {
@@ -702,9 +702,9 @@ function updateAirQualityStatus(airquality) {
   } else if (airquality <= 200) {
     airQualityStatus.innerText = "Unhealthy😷";
   } else if (airquality <= 250) {
-    airQualityStatus.innerText = "Very Unhealthy😨";
+    airQualityStatus.innerText = "Very Unhealthy 😨";
   } else {
-    airQualityStatus.innerText = "Hazardous😱";
+    airQualityStatus.innerText = "NOPE😱";
   }
 }
 
